@@ -1,0 +1,586 @@
+/* Topnav color */
+.topnav {
+    background-color: #111111;
+    overflow: hidden;
+    
+}
+
+/* topnav link style */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav > a {
+    padding: 14px 16px;
+}
+
+/* highlights current page */
+.active {
+    background-color: #5CC5DB !important;
+    color: #ffffff;
+}
+
+/* hides hamburger button on large screens */
+.topnav .icon {
+    display: none;
+}
+
+/* dropdown container position */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+button {
+    padding: 0;
+
+    width: 100%;
+}
+
+.dropbtn {
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: transparent;
+    border: none;
+}
+
+/* fits the dropdown button in the topnav */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* styles the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.sticky .dropdown-content {
+    top: 45px;
+}
+
+/* styles links in the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+/* adds a background on topnav links, and the dropdown button on hover */
+.topnav > a:hover, .dropdown:hover, .dropbtn:hover {
+    background-color: #555555;
+    color: white;
+}
+
+/* add a background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #555555;
+    color: white;
+}
+
+ /* show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content,.sticky .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky .dropbtn i {
+    display: none;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.main {
+    width: 75%;
+    float: left;
+}
+
+/* body formatting below */
+
+body {
+    /*
+    background-color: #333333;
+    */
+    background-image: linear-gradient(#222, #444);
+    font-family: "Verdana", "Arial", sans-serif;
+    color: white;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+    background-color: #222;
+}
+
+footer img {
+    filter: invert(100%)
+}
+
+.continents-content_anchor a:visited, .continents-content_anchor a {
+    color: white;
+    text-decoration: none;
+}
+
+.continents-content_anchor a {
+    text-decoration: underline;
+    color: #5CC5DB;
+}
+
+.continents-content_anchor a:visited {
+    text-decoration: underline;
+    color: #A786BA;
+}
+
+.continents-content_anchor a:hover {
+    text-decoration: underline;
+    color: #5CC5DB;
+}
+
+.center-container {
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-boxes img {
+    display: inline-grid;
+    width: 19%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    border: white 20px;
+    border-style: solid;
+    align-items: center;
+    background: white;
+    justify-content: center;
+    align-self: center;
+}
+
+.jinpoki-guide-images img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: white 25px;
+    border-style: solid;
+    background: white;
+}
+
+.The-Mother-Jinpoki img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: white 25px;
+    border-style: solid;
+    background: white;
+}
+
+.Jinpoki-Sizes img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: white 25px;
+    border-style: solid;
+    background: white;  
+}
+
+.Jinpoki-Food-and-Growth img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: white 25px;
+    border-style: solid;
+    background: white;    
+}
+
+.Jinpoki-Traits img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: white 25px;
+    border-style: solid;
+    background: white;    
+}
+
+.jinpoki-planet-images img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: white 25px;
+    border-style: solid;
+    background: white;
+}
+
+.header-banner img {
+    border: none !important; 
+}
+
+.footer-image img {
+    background: none !important;
+    border: none !important;
+}
+
+.jinpoki-group-gif img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none !important;
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.gallery-images img {
+    margin-left: none !important;
+}
+
+p {
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 12pt;
+    line-height: 1.25;
+}
+
+h1, h2 {
+    color: #fff;
+    font-size: 20pt;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+ul {
+    padding-left: 125px;
+    padding-right: 125px;
+    line-height: 1.25;
+}
+
+#creators-container {
+    overflow: auto;
+}
+
+#about-column-third {
+    float: left;
+    width: 30%;
+    padding: 1%;
+    margin: auto;
+    border: 0;
+    text-align: center;
+}
+
+#about-column-third img {
+    padding: 5px;
+}
+
+#social-icons {
+    padding: 10px
+}
+
+#social-icons img {
+    padding-right: 2.5px;
+    padding-left: 2.5px;
+}
+
+figcaption { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 10pt;    
+    font-style: italic;
+}
+
+figcaption {}
+
+@media screen and (max-width: 925px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    button {
+        height: 45px
+    }
+    
+    #about-column-third {
+        float: left;
+        width: 98%;
+        margin: auto;
+        border: 0;
+        text-align: center;
+    }
+    
+    .gallery-boxes img {
+        margin: 0 auto;
+        display: inline-block;
+        float: none;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        width: 25% !important;
+        align-content: center;
+        border: white 2;
+    }
+    
+    h1, h2 {
+        color: #fff;
+        font-size: 16pt;
+        font-weight: bold;
+        text-decoration-line: underline;
+    }
+    
+    p {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 12pt;
+        line-height: 1.25;
+    }
+    
+    ul {
+        padding-left: 15%;
+        padding-right: 10% !important;
+        font-size: 12pt;
+        line-height: 1.25;
+    }
+    
+    .jinpoki-guide-images img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;
+    }
+
+    .The-Mother-Jinpoki img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;
+    }
+
+    .Jinpoki-Sizes img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;
+    }
+
+    .Jinpoki-Food-and-Growth img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;   
+    }
+
+    .Jinpoki-Traits img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white; 
+    }
+
+    .jinpoki-planet-images img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;
+    }
+}
+
+@media screen and (max-width: 730px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    button {
+        height: 45px
+    }
+    
+    #about-column-third {
+        float: left;
+        width: 98%;
+        margin: auto;
+        border: 0;
+        text-align: center;
+    }
+    
+    .gallery-boxes img {
+        margin: 0 auto;
+        display: inline-block;
+        float: none;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        width: 33% !important;
+        align-content: center;
+        border: white 2;
+    }
+    
+    h1, h2 {
+        color: #fff;
+        font-size: 16pt;
+        font-weight: bold;
+        text-decoration-line: underline;
+    }
+    
+    p {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 12pt;
+        line-height: 1.25;
+    }
+    
+    ul {
+        padding-left: 15%;
+        padding-right: 10% !important;
+        font-size: 12pt;
+        line-height: 1.25;
+    }
+    
+    .jinpoki-guide-images img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;
+    }
+
+    .The-Mother-Jinpoki img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;
+    }
+
+    .Jinpoki-Sizes img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;
+    }
+
+.   Jinpoki-Food-and-Growth img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;   
+    }
+
+    .Jinpoki-Traits img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white; 
+    }
+
+    .jinpoki-planet-images img {
+        display: block;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        border: white 10px;
+        border-style: solid;
+        background: white;
+    }
+
+}
+
+@media screen and (min-width: 925px) {
+    .topnav {height: 45px}
+    button {height: 100%}
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 925px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+      
+
+      
+  }
+}
+
+
+
